@@ -95,44 +95,28 @@ header.header.header-sticky.mb-4
   .header-divider
   .container-fluid
     block breadcrumb 
-
-.offcanvas.offcanvas-start#offcanvasExample(tabindex="-1" style="width: 1200px;max-width: 100%" aria-labelledby="offcanvasExampleLabel")
-  .offcanvas-header
-    h5.offcanvas-title#offcanvasExampleLabel 
-    button.btn-close.text-reset(data-coreui-dismiss="offcanvas"  aria-label="Close")
-  .offcanvas-body 
-    .container
-      .row
-        .col.col-auto
-          .sidebar.sidebar-light.sidebar-fixed#sidebar(style="margin-left: 0px")
-            .sidebar-brand.d-none.d-md-flex
-              svg.sidebar-brand-full(width="118" height="46" alt="CoreUI Logo")
-                use(xlink:href="assets/brand/coreui.svg#full")
-                |
-              svg.sidebar-brand-narrow(width="46" height="46" alt="CoreUI Logo")
-                use(xlink:href="assets/brand/coreui.svg#signet")
-            ul.sidebar-nav(data-coreui="navigation" data-simplebar)
-              li.nav-title
-                | Theme
-              li.nav-item
-                a.nav-link(href='colors.html')
-                  svg.nav-icon
-                    use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-drop")
-                  |  Colors
-        .col(style="padding-left: 260px;") 
-          .input-group.mb-3
-            input.form-control(type='text' placeholder='请输入服务名' aria-label='Username' aria-describedby='basic-addon1')
-          .col-sm-6.col-lg-4
-            .card.mb-4(style='--cui-card-cap-bg: #3b5998')
-              .card-header.position-relative.d-flex.justify-content-center.align-items-center
-                div.text-white.my-4
-                  h4 测试
-                  div 111
-              .card-body.row.text-center
-                .col
-                  .fs-5.fw-semibold 收藏
-                  .text-uppercase.text-medium-emphasis.small 收藏按钮
-                .vr
-                .col
-                  .fs-5.fw-semibold 分享
-                  .text-uppercase.text-medium-emphasis.small 分享按钮
+div(style="position:relative;overflow: auto;position:relative;overflow:visible;z-index: 1")
+  .offcanvas.offcanvas-start#offcanvasExample(tabindex="-1" data-coreui-backdrop="false" style="top:0;width: 800px;max-width: 100%;position: absolute;width: 100%;height: 41rem;top: -1.4rem;" aria-labelledby="offcanvasExampleLabel")
+    .offcanvas-header
+      h5.offcanvas-title#offcanvasExampleLabel 
+      button.btn-close.text-reset(data-coreui-dismiss="offcanvas"  aria-label="Close")
+    .offcanvas-body 
+      .container
+        .row
+          .col(style="padding-left: 0px;") 
+            .input-group.mb-3
+              input.form-control(type='text' placeholder='请输入服务名' aria-label='Username' aria-describedby='basic-addon1')
+            .col-sm-6.col-lg-4
+              .card.mb-4(style='--cui-card-cap-bg: #3b5998')
+                .card-header.position-relative.d-flex.justify-content-center.align-items-center
+                  div.text-white.my-4
+                    h4 测试
+                    div 111
+                .card-body.row.text-center
+                  .col
+                    .fs-5.fw-semibold 收藏
+                    .text-uppercase.text-medium-emphasis.small 收藏按钮
+                  .vr
+                  .col
+                    .fs-5.fw-semibold 分享
+                    .text-uppercase.text-medium-emphasis.small 分享按钮

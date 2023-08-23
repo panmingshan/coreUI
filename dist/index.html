@@ -148,54 +148,37 @@
           </nav>
         </div>
       </header>
-      <div class="offcanvas offcanvas-start" id="offcanvasExample" tabindex="-1" style="width: 1200px;max-width: 100%" aria-labelledby="offcanvasExampleLabel">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasExampleLabel"> </h5>
-          <button class="btn-close text-reset" data-coreui-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-          <div class="container">
-            <div class="row">
-              <div class="col col-auto">
-                <div class="sidebar sidebar-light sidebar-fixed" id="sidebar" style="margin-left: 0px">
-                  <div class="sidebar-brand d-none d-md-flex">
-                    <svg class="sidebar-brand-full" width="118" height="46" alt="CoreUI Logo">
-                      <use xlink:href="assets/brand/coreui.svg#full"></use>
-                    </svg>
-                    <svg class="sidebar-brand-narrow" width="46" height="46" alt="CoreUI Logo">
-                      <use xlink:href="assets/brand/coreui.svg#signet"></use>
-                    </svg>
+      <div style="position:relative;overflow: auto;position:relative;overflow:visible;z-index: 1">
+        <div class="offcanvas offcanvas-start" id="offcanvasExample" tabindex="-1" data-coreui-backdrop="false" style="top:0;width: 800px;max-width: 100%;position: absolute;width: 100%;height: 41rem;top: -1.4rem;" aria-labelledby="offcanvasExampleLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel"> </h5>
+            <button class="btn-close text-reset" data-coreui-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="container">
+              <div class="row">
+                <div class="col" style="padding-left: 0px;">
+                  <div class="input-group mb-3">
+                    <input class="form-control" type="text" placeholder="请输入服务名" aria-label="Username" aria-describedby="basic-addon1">
                   </div>
-                  <ul class="sidebar-nav" data-coreui="navigation" data-simplebar="">
-                    <li class="nav-title">Theme</li>
-                    <li class="nav-item"><a class="nav-link" href="colors.html">
-                        <svg class="nav-icon">
-                          <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-drop"></use>
-                        </svg> Colors</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col" style="padding-left: 260px;">
-                <div class="input-group mb-3">
-                  <input class="form-control" type="text" placeholder="请输入服务名" aria-label="Username" aria-describedby="basic-addon1">
-                </div>
-                <div class="col-sm-6 col-lg-4">
-                  <div class="card mb-4" style="--cui-card-cap-bg: #3b5998">
-                    <div class="card-header position-relative d-flex justify-content-center align-items-center">
-                      <div class="text-white my-4">
-                        <h4>测试</h4>
-                        <div>111</div>
+                  <div class="col-sm-6 col-lg-4">
+                    <div class="card mb-4" style="--cui-card-cap-bg: #3b5998">
+                      <div class="card-header position-relative d-flex justify-content-center align-items-center">
+                        <div class="text-white my-4">
+                          <h4>测试</h4>
+                          <div>111</div>
+                        </div>
                       </div>
-                    </div>
-                    <div class="card-body row text-center">
-                      <div class="col">
-                        <div class="fs-5 fw-semibold">收藏</div>
-                        <div class="text-uppercase text-medium-emphasis small">收藏按钮</div>
-                      </div>
-                      <div class="vr"></div>
-                      <div class="col">
-                        <div class="fs-5 fw-semibold">分享</div>
-                        <div class="text-uppercase text-medium-emphasis small">分享按钮</div>
+                      <div class="card-body row text-center">
+                        <div class="col">
+                          <div class="fs-5 fw-semibold">收藏</div>
+                          <div class="text-uppercase text-medium-emphasis small">收藏按钮</div>
+                        </div>
+                        <div class="vr"></div>
+                        <div class="col">
+                          <div class="fs-5 fw-semibold">分享</div>
+                          <div class="text-uppercase text-medium-emphasis small">分享按钮</div>
+                        </div>
                       </div>
                     </div>
                   </div>
