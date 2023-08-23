@@ -1,0 +1,69 @@
+extends ../_layout/default.pug
+
+block styles
+  link(href='node_modules/@coreui/chartjs/dist/css/coreui-chartjs.css', rel='stylesheet')
+
+block scripts
+  if !starter
+    // Plugins and scripts required by this view
+    script(src='node_modules/chart.js/dist/chart.min.js')
+    script(src='node_modules/@coreui/chartjs/dist/js/coreui-chartjs.js')
+    script(src='node_modules/@coreui/utils/dist/coreui-utils.js')
+    script(src='js/main.js')
+
+block breadcrumb
+  +breadcrumb(['首页'], '面板')
+
+block view
+  .row
+    h4.pt-2 最近访问
+    .col-sm-6.col-lg-4
+      .card.mb-4(style='--cui-card-cap-bg: #3b5998')
+        .card-header.position-relative.d-flex.justify-content-center.align-items-center
+          div.text-white.my-4
+            h4 测试
+            div 111
+        .card-body.row.text-center
+          .col
+            .fs-5.fw-semibold 收藏
+            .text-uppercase.text-medium-emphasis.small 收藏按钮
+          .vr
+          .col
+            .fs-5.fw-semibold 分享
+            .text-uppercase.text-medium-emphasis.small 分享按钮
+
+  .row
+    h4.pt-2 我的收藏
+    .col-sm-6.col-lg-4
+      .card.mb-4(style='--cui-card-cap-bg: #3b5998')
+        .card-header.position-relative.d-flex.justify-content-center.align-items-center
+          div.text-white.my-4
+            h4 测试
+            div 111
+        .card-body.row.text-center
+          .col
+            .fs-5.fw-semibold 收藏
+            .text-uppercase.text-medium-emphasis.small 收藏按钮
+          .vr
+          .col
+            .fs-5.fw-semibold 分享
+            .text-uppercase.text-medium-emphasis.small 分享按钮
+
+  .row
+    h4.pt-2 全部服务
+    .input-group.mb-3
+      input.form-control(type='text' placeholder='请输入服务名' aria-label='Username' aria-describedby='basic-addon1')
+    .col-sm-6.col-lg-4
+      .card.mb-4(style='--cui-card-cap-bg: #3b5998')
+        .card-header.position-relative.d-flex.justify-content-center.align-items-center
+          div.text-white.my-4
+            h4 测试
+            div 111
+        .card-body.row.text-center
+          .col
+            .fs-5.fw-semibold 收藏
+            .text-uppercase.text-medium-emphasis.small 收藏按钮
+          .vr
+          .col
+            .fs-5.fw-semibold 分享
+            .text-uppercase.text-medium-emphasis.small 分享按钮
